@@ -13,6 +13,11 @@ public class VetorTeste {
 		vetor.remove(0);
 		Aluno x = vetor.pega(0);
 
+		for (int i = 0; i <= 300; i++) {
+			Aluno y = new Aluno("teste" + i);
+			vetor.adiciona(y);
+		}
+
 		System.out
 				.println(vetor + "\n" + vetor.tamanho() + "\n" + vetor.contem(a1) + "\n" + vetor.contem(a3) + "\n" + x);
 	}
